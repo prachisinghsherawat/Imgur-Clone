@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/48d765ab3a.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+    .imgurIcon{
+        height: 130px;
+        width: 250px;
+        margin: auto;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+    .paraTag{
+        text-align: center;
+        margin-bottom: 0.6%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+    }
+
+    .iconBox{
+        height: 40px;
+        padding: 1%;
+        width: 370px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2px;
+        border-radius: 6px 6px;
+        background-color: rgb(61, 61, 68);
+    }
+
+    .iconBox>div{
+        height: 94%;
+        width: 16%;
+        color: white;
+        background-color: rgb(34, 32, 32);
+    }
+
+    .signupBox{
+        height: 220px;
+        width: 370px;
+        padding: 1%;
+        margin: auto;
+        margin-top: 2px;
+        background-color: rgb(61, 61, 68);
+        border-radius: 6px 6px;
+    }
+
+    #signbox1{
+        padding: 2%;
+        margin-bottom: 4%;
+        width: 94%;
+        background-color: rgb(34, 32, 32);
+        border: none;
+        color: white;
+    }
+
+
+    #downBox{
+        font-size: 20px;
+        display: flex;
+    }
+
+    .iconBox1{
+        /* height: 20px; */
+        padding: 1%;
+        width: 150px;
+        display: flex;
+        margin-left: 52%;
+        font-size: 20px;
+        justify-content: space-between;
+    }
+
+    .iconBox1>p{
+        margin: 0%;
+        padding: 0%;
+        margin-top: 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    #btn1{
+       padding: 11px 21px;
+       border-radius: 3px;
+       border: none;
+       color: white;
+       font-size: 16px;
+       background-color: rgb(74, 93, 202);
+    }
+   
+
+</style>
+<body style="background-color: rgb(43, 42, 42);">
+    <div class="imgurIcon">
+        <img src="data:image/png;base64,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" alt="" height="100%" width="100%">
+    </div>
+    <p class="paraTag">Register with</p>
+    <div class="iconBox">
+        <div>
+            <img src="https://tech.thaivisa.com/wp-content/uploads/2017/02/facebook-logo-650x336.jpg" alt="" height="100%" width="100%"></i>
+        </div>
+        <div>
+            <img src="https://www.muycomputer.com/wp-content/uploads/2021/03/Twitter-1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div>
+            <img src="https://wallpapercave.com/wp/Be076f5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div>
+            <img src="https://images.techhive.com/images/article/2014/09/chrome-logo-100437066-large.jpg?auto=webp&quality=85,70" alt="" height="100%" width="100%">
+        </div>
+        <div>
+            <img src="https://media.glamour.com/photos/5cfa5d315e50abe70965cef3/master/w_2560%2Cc_limit/00-story-insta.jpg" alt="" height="100%" width="100%">
+        </div>
+    </div>
+    <p class="paraTag">or with Imgur</p>
+    <div class="signupBox">
+        <input type="text" id="signbox1" placeholder="Username">
+        <input type="text" id="signbox1" placeholder="Email">
+        <input type="text" id="signbox1" placeholder="Password">
+        <input type="text" id="signbox1" placeholder="Retype Password">
+        <input type="text" id="signbox1" placeholder="91 + Phone Number">
+       
+
+        
+    </div>
+    <div class="iconBox1">
+        <p>Sign In</p>
+        <button id="btn1">Next</button>
+    </div>
+</body>
+</html>
